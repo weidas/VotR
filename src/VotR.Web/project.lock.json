@@ -6,12 +6,116 @@
       "Microsoft.AspNet.Server.IIS >= 1.0.0-beta4",
       "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta4",
       "Microsoft.AspNet.Diagnostics >= 1.0.0-beta4",
-      "Microsoft.AspNet.Mvc >= 6.0.0-beta4"
+      "Microsoft.AspNet.Mvc >= 6.0.0-beta4",
+      "Twitter.Bootstrap.MVC >= 2.1.6"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
   },
   "libraries": {
+    "Antlr/3.4.1.9004": {
+      "serviceable": false,
+      "sha": "c1S+HBE+KYA5EBxtn25LEK02hHPH/tDQ6RviUTTCJpZIPoputtn8ArsQJy9lVJWZOnw37ufByO2Fmf1M8wpr8Q==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/Antlr3.Runtime.dll"
+          ],
+          "compileAssemblies": [
+            "lib/Antlr3.Runtime.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/Antlr3.Runtime.dll"
+          ],
+          "compileAssemblies": [
+            "lib/Antlr3.Runtime.dll"
+          ]
+        }
+      },
+      "files": [
+        "Antlr.3.4.1.9004.nupkg",
+        "Antlr.3.4.1.9004.nupkg.sha512",
+        "Antlr.nuspec",
+        "lib/Antlr3.Runtime.dll",
+        "lib/Antlr3.Runtime.pdb"
+      ]
+    },
+    "bootstrap/3.1.1": {
+      "serviceable": false,
+      "sha": "bZdJfKiF+ez9518keshVM/mIZHCqDSrI+Bb4GjHauYlrMfgNuud9vZxrIf5QbqK9vaZ3mXmq02Kmg+TcPXm2MQ==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "jquery": "1.9.0"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "jquery": "1.9.0"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "bootstrap.3.1.1.nupkg",
+        "bootstrap.3.1.1.nupkg.sha512",
+        "bootstrap.nuspec",
+        "content/Content/bootstrap-theme.css",
+        "content/Content/bootstrap-theme.css.map",
+        "content/Content/bootstrap-theme.min.css",
+        "content/Content/bootstrap.css",
+        "content/Content/bootstrap.css.map",
+        "content/Content/bootstrap.min.css",
+        "content/fonts/glyphicons-halflings-regular.eot",
+        "content/fonts/glyphicons-halflings-regular.svg",
+        "content/fonts/glyphicons-halflings-regular.ttf",
+        "content/fonts/glyphicons-halflings-regular.woff",
+        "content/Scripts/bootstrap.js",
+        "content/Scripts/bootstrap.min.js"
+      ]
+    },
+    "jquery/1.9.0": {
+      "serviceable": false,
+      "sha": "bS6OGSd/QL39vKKhATpeehgZDCzV6foRJ52EocEGAB29VetwXkQHN6KQIBlBbW9VJzuHr+rQxHYZ13MnPGQ/vw==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "jquery.1.9.0.nupkg",
+        "jquery.1.9.0.nupkg.sha512",
+        "jquery.nuspec",
+        "Content/Scripts/jquery-1.9.0-vsdoc.js",
+        "Content/Scripts/jquery-1.9.0.js",
+        "Content/Scripts/jquery-1.9.0.min.js",
+        "Content/Scripts/jquery-1.9.0.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-1.9.0.intellisense.js",
+        "Tools/uninstall.ps1"
+      ]
+    },
     "Microsoft.AspNet.Authentication/1.0.0-beta4": {
       "serviceable": true,
       "sha": "bF++RlseLYrzDjtzrwNsLlftnj65Gctg6AkW6QMmk3W5EcNCktynbfjZrAn/1JRr7jri5XAJ546kvoayYKMjEg==",
@@ -1676,6 +1780,41 @@
         "lib/dnxcore50/Microsoft.AspNet.Server.WebListener.xml"
       ]
     },
+    "Microsoft.AspNet.Web.Optimization/1.1.2": {
+      "serviceable": false,
+      "sha": "o+xd4qDFZ/RMsI+6U5OLpjXMQjuifIeiuKyjDFMAIXukkVqzUHPVchSCkFJCc7QVPqpUW/fU4Vhkxll5YAu1Jw==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Microsoft.Web.Infrastructure": "1.0.0",
+            "WebGrease": "1.5.2"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/System.Web.Optimization.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/System.Web.Optimization.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "Microsoft.Web.Infrastructure": "1.0.0",
+            "WebGrease": "1.5.2"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "Microsoft.AspNet.Web.Optimization.1.1.2.nupkg",
+        "Microsoft.AspNet.Web.Optimization.1.1.2.nupkg.sha512",
+        "Microsoft.AspNet.Web.Optimization.nuspec",
+        "lib/net40/System.Web.Optimization.dll",
+        "lib/net40/system.web.optimization.xml"
+      ]
+    },
     "Microsoft.AspNet.WebUtilities/1.0.0-beta4": {
       "serviceable": true,
       "sha": "EZJruvBXvVN78gAuL1Ei8HSgBfS9HvU/CiE4MjicXwdzHwyv+HZAvReDmGeWa+UaIW8kmmM4LzNAE8uEBjeQXA==",
@@ -2803,6 +2942,34 @@
         "lib/dnxcore50/Microsoft.Net.WebSockets.xml",
         "lib/net45/Microsoft.Net.WebSockets.dll",
         "lib/net45/Microsoft.Net.WebSockets.xml"
+      ]
+    },
+    "Microsoft.Web.Infrastructure/1.0.0.0": {
+      "serviceable": false,
+      "sha": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/Microsoft.Web.Infrastructure.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/Microsoft.Web.Infrastructure.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "Microsoft.Web.Infrastructure.1.0.0.0.nupkg",
+        "Microsoft.Web.Infrastructure.1.0.0.0.nupkg.sha512",
+        "Microsoft.Web.Infrastructure.nuspec",
+        "lib/net40/Microsoft.Web.Infrastructure.dll"
       ]
     },
     "Microsoft.Win32.Primitives/4.0.0-beta-22816": {
@@ -5535,6 +5702,113 @@
         "lib/contract/System.Xml.XDocument.dll",
         "lib/net45/System.Xml.XDocument.dll",
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Xml.XDocument.dll"
+      ]
+    },
+    "Twitter.Bootstrap.MVC/2.1.6": {
+      "serviceable": false,
+      "sha": "S7PvKoJeqaUTqXcdPu5+WucslBZ3Mq8qBiyNJsY4o3IXflKXeNEmKk1Btc65tG6Z86jIRpVINCl5bV9I0abnUA==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": "5.1.0",
+            "Microsoft.AspNet.Web.Optimization": "1.1.2",
+            "WebActivatorEx": "2.0.4",
+            "bootstrap": "3.1.1"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": "5.1.0",
+            "Microsoft.AspNet.Web.Optimization": "1.1.2",
+            "WebActivatorEx": "2.0.4",
+            "bootstrap": "3.1.1"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "Twitter.Bootstrap.MVC.2.1.6.nupkg",
+        "Twitter.Bootstrap.MVC.2.1.6.nupkg.sha512",
+        "Twitter.Bootstrap.MVC.nuspec",
+        "content/net40/App_Start/BootstrapBundleConfig.cs.pp"
+      ]
+    },
+    "WebActivatorEx/2.0.4": {
+      "serviceable": false,
+      "sha": "Sgol3nDK0EsVuSoRnT8Mhkt+TlwW6A1bL0LQ5U4OHxcxcWkjQX04iZpMYzq3Wz1F22afP3ReXALPfwMUtP8PlQ==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Microsoft.Web.Infrastructure": "1.0.0.0"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/WebActivatorEx.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/WebActivatorEx.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "Microsoft.Web.Infrastructure": "1.0.0.0"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "WebActivatorEx.2.0.4.nupkg",
+        "WebActivatorEx.2.0.4.nupkg.sha512",
+        "WebActivatorEx.nuspec",
+        "lib/net40/WebActivatorEx.dll"
+      ]
+    },
+    "WebGrease/1.5.2": {
+      "serviceable": false,
+      "sha": "VoyDSOOugLx3q5IyOgEcjeYZQOqV9VWZQT57UtN4szlYhAmOcEjVfKWXbtRqBuX43pgyL9E7nMSIPoryC8Cu1Q==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Antlr": "3.4.1.9004",
+            "Newtonsoft.Json": "5.0.4"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/WebGrease.dll"
+          ],
+          "compileAssemblies": [
+            "lib/WebGrease.dll"
+          ]
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {
+            "Antlr": "3.4.1.9004",
+            "Newtonsoft.Json": "5.0.4"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/WebGrease.dll"
+          ],
+          "compileAssemblies": [
+            "lib/WebGrease.dll"
+          ]
+        }
+      },
+      "files": [
+        "WebGrease.1.5.2.nupkg",
+        "WebGrease.1.5.2.nupkg.sha512",
+        "WebGrease.nuspec",
+        "lib/WebGrease.dll",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "tools/WG.exe"
       ]
     }
   }
