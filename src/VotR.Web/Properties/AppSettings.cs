@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace VotR.Web.Models
+namespace VotR.Web
 {
-    public class HomeModel
+    public class AppSettings
     {
+        public string SiteTitle { get; set; }
     }
 }
