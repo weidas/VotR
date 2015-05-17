@@ -1,10 +1,10 @@
 {
   "AppSettings": {
-    "SiteTitle": "VotR.Web"
+    "SiteTitle": "VotR"
   },
   "Data": {
     "DefaultConnection": {
-      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-VotR.Web-996772a0-31f7-4ed1-8685-d8694c2fb1c2;Trusted_Connection=True;MultipleActiveResultSets=true"
+      "ConnectionString": ""
     }
   }
 }
