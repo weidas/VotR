@@ -1,0 +1,11 @@
+﻿@using VotR.Web.Models
+@model List<TopFiveModel>
+
+<div class="col-sm-1"></div>
+@foreach(var itm in Model)
+{
+    <div class="col-sm-2">
+        <span>@itm.Name</span>
+    </div>
+}
+<div class="col-sm-1"></div>

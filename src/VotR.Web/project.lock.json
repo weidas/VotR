@@ -20,7 +20,9 @@
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta4",
       "Microsoft.AspNet.Diagnostics.Entity >= 7.0.0-beta4"
     ],
-    "DNX,Version=v4.5.1": [],
+    "DNX,Version=v4.5.1": [
+      "framework/System.ComponentModel.DataAnnotations >= 4.0.0.0"
+    ],
     "DNXCore,Version=v5.0": []
   },
   "libraries": {
