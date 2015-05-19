@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNet.Mvc;
+using VotR.Services.Interfaces;
 
 namespace VotR.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IExternalService _externalService;
+
+        public HomeController(IExternalService externalService)
+        {
+            _externalService = externalService;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -30,6 +34,13 @@ namespace VotR.Web.Controllers
         public IActionResult Error()
         {
             return View("~/Views/Shared/Error.cshtml");
+        }
+
+        public IActionResult SyncSystembolaget()
+        {
+            var x =_externalService.GetArticlesFromSystemBolaget("http://www.systembolaget.se/api/assortment/products/xml");
+
+            return View("Index");
         }
     }
 }

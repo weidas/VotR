@@ -3,26 +3,25 @@
   "version": -9998,
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.AspNet.Mvc >= 6.0.0-beta4",
-      "Microsoft.AspNet.Mvc.TagHelpers >= 6.0.0-beta4",
-      "Microsoft.AspNet.Authentication.Cookies >= 1.0.0-beta4",
-      "Microsoft.AspNet.Authentication.MicrosoftAccount >= 1.0.0-beta4",
+      "Microsoft.AspNet.Mvc.Core >= 6.0.0-beta4",
+      "VotR.API >= 1.0.0-*",
+      "VotR.Shared >= 1.0.0-*",
       "Microsoft.AspNet.Diagnostics >= 1.0.0-beta4",
-      "Microsoft.AspNet.Server.IIS >= 1.0.0-beta4",
-      "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta4",
-      "Microsoft.AspNet.StaticFiles >= 1.0.0-beta4",
-      "Microsoft.AspNet.Tooling.Razor >= 1.0.0-beta4",
+      "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta4",
+      "Microsoft.Framework.Logging >= 1.0.0-beta4",
+      "Microsoft.Framework.Logging.Console >= 1.0.0-beta4",
+      "Microsoft.AspNet.Diagnostics.Entity >= 7.0.0-beta4",
       "Microsoft.Framework.ConfigurationModel.Json >= 1.0.0-beta4",
       "Microsoft.Framework.ConfigurationModel.UserSecrets >= 1.0.0-beta4",
       "Microsoft.Framework.CodeGenerators.Mvc >= 1.0.0-beta4",
-      "Microsoft.Framework.Logging >= 1.0.0-beta4",
-      "Microsoft.Framework.Logging.Console >= 1.0.0-beta4",
-      "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta4",
-      "Microsoft.AspNet.Diagnostics.Entity >= 7.0.0-beta4"
+      "Microsoft.AspNet.Mvc.TagHelpers >= 6.0.0-beta4",
+      "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta4",
+      "Microsoft.AspNet.StaticFiles >= 1.0.0-beta4",
+      "Microsoft.AspNet.Tooling.Razor >= 1.0.0-beta4",
+      "Microsoft.AspNet.Mvc >= 6.0.0-beta4",
+      "Microsoft.AspNet.Server.IIS >= 1.0.0-beta4"
     ],
-    "DNX,Version=v4.5.1": [
-      "framework/System.ComponentModel.DataAnnotations >= 4.0.0.0"
-    ],
+    "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
   },
   "libraries": {
@@ -495,149 +494,6 @@
         "lib/dnx451/Microsoft.AspNet.Authentication.xml",
         "lib/dnxcore50/Microsoft.AspNet.Authentication.dll",
         "lib/dnxcore50/Microsoft.AspNet.Authentication.xml"
-      ]
-    },
-    "Microsoft.AspNet.Authentication.Cookies/1.0.0-beta4": {
-      "serviceable": true,
-      "sha": "gilKlvqbAgsQNzAxdPZDq/ubvtvryD9TToOx6VCtzNza8n7Ghm72Z3QJF++7Avxk+AtE4AYjSUhMZHSt+Ik5/A==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.Authentication": "1.0.0-beta4",
-            "Newtonsoft.Json": "6.0.6"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.Cookies.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.Cookies.dll"
-          ]
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "Microsoft.AspNet.Authentication": "1.0.0-beta4",
-            "Newtonsoft.Json": "6.0.6"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/dnxcore50/Microsoft.AspNet.Authentication.Cookies.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnxcore50/Microsoft.AspNet.Authentication.Cookies.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Authentication.Cookies.1.0.0-beta4.nupkg",
-        "Microsoft.AspNet.Authentication.Cookies.1.0.0-beta4.nupkg.sha512",
-        "Microsoft.AspNet.Authentication.Cookies.nuspec",
-        "lib/dnx451/Microsoft.AspNet.Authentication.Cookies.dll",
-        "lib/dnx451/Microsoft.AspNet.Authentication.Cookies.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.Cookies.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.Cookies.xml"
-      ]
-    },
-    "Microsoft.AspNet.Authentication.MicrosoftAccount/1.0.0-beta4": {
-      "serviceable": true,
-      "sha": "ho/2XhYjtIb2VDO+JTTQWyyt5N9cL+qiEDenvdK5hSHxh3gUzZg2GGolAdN8mpntHjWb9lfai6d7eIczMW26TA==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.Authentication.OAuth": "1.0.0-beta4"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.MicrosoftAccount.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.MicrosoftAccount.dll"
-          ]
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "Microsoft.AspNet.Authentication.OAuth": "1.0.0-beta4",
-            "System.Dynamic.Runtime": "4.0.10-beta-22816",
-            "System.ObjectModel": "4.0.10-beta-22816"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/dnxcore50/Microsoft.AspNet.Authentication.MicrosoftAccount.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnxcore50/Microsoft.AspNet.Authentication.MicrosoftAccount.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Authentication.MicrosoftAccount.1.0.0-beta4.nupkg",
-        "Microsoft.AspNet.Authentication.MicrosoftAccount.1.0.0-beta4.nupkg.sha512",
-        "Microsoft.AspNet.Authentication.MicrosoftAccount.nuspec",
-        "lib/dnx451/Microsoft.AspNet.Authentication.MicrosoftAccount.dll",
-        "lib/dnx451/Microsoft.AspNet.Authentication.MicrosoftAccount.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.MicrosoftAccount.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.MicrosoftAccount.xml"
-      ]
-    },
-    "Microsoft.AspNet.Authentication.OAuth/1.0.0-beta4": {
-      "serviceable": true,
-      "sha": "fOJ+3E6gT8+g3dku13hZEXbZog/Iqrz2dM9jGRtK4wdpB2AOQQ7PK/6cgjxT3m/79w8eeY7q+hhT00+p2DbcJQ==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.DataProtection": "1.0.0-beta4",
-            "Microsoft.AspNet.Authentication": "1.0.0-beta4",
-            "Newtonsoft.Json": "6.0.6"
-          },
-          "frameworkAssemblies": [
-            "System.Net.Http.WebRequest",
-            "System.Net.Http",
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.OAuth.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.OAuth.dll"
-          ]
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "Microsoft.AspNet.DataProtection": "1.0.0-beta4",
-            "Microsoft.AspNet.Authentication": "1.0.0-beta4",
-            "Newtonsoft.Json": "6.0.6",
-            "System.Net.Http.WinHttpHandler": "4.0.0-beta-22816"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/dnxcore50/Microsoft.AspNet.Authentication.OAuth.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnxcore50/Microsoft.AspNet.Authentication.OAuth.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Authentication.OAuth.1.0.0-beta4.nupkg",
-        "Microsoft.AspNet.Authentication.OAuth.1.0.0-beta4.nupkg.sha512",
-        "Microsoft.AspNet.Authentication.OAuth.nuspec",
-        "lib/dnx451/Microsoft.AspNet.Authentication.OAuth.dll",
-        "lib/dnx451/Microsoft.AspNet.Authentication.OAuth.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.OAuth.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.OAuth.xml"
       ]
     },
     "Microsoft.AspNet.Authorization/1.0.0-beta4": {
@@ -5770,50 +5626,6 @@
         "lib/contract/System.Net.Http.dll",
         "lib/net45/_._",
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Net.Http.dll"
-      ]
-    },
-    "System.Net.Http.WinHttpHandler/4.0.0-beta-22816": {
-      "serviceable": false,
-      "sha": "lyZYZIP5hKn9JMOG3ZEg/5Vv7amGk/yW2pCqO8S3NS1w9eAKrEMLK0L+muspAfriGTUULLWn/hv34IReQRztow==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "System.Net.Http": "4.0.0-beta-22816",
-            "System.Net.Primitives": "4.0.10-beta-22816",
-            "System.Runtime": "4.0.20-beta-22816",
-            "System.Security.Cryptography.X509Certificates": "4.0.0-beta-22816",
-            "System.Threading.Tasks": "4.0.10-beta-22816"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [],
-          "compileAssemblies": []
-        },
-        "DNXCore,Version=v5.0": {
-          "dependencies": {
-            "System.Net.Http": "4.0.0-beta-22816",
-            "System.Net.Primitives": "4.0.10-beta-22816",
-            "System.Runtime": "4.0.20-beta-22816",
-            "System.Security.Cryptography.X509Certificates": "4.0.0-beta-22816",
-            "System.Threading.Tasks": "4.0.10-beta-22816"
-          },
-          "frameworkAssemblies": [],
-          "runtimeAssemblies": [
-            "lib/aspnetcore50/System.Net.Http.WinHttpHandler.dll"
-          ],
-          "compileAssemblies": [
-            "lib/contract/System.Net.Http.WinHttpHandler.dll"
-          ]
-        }
-      },
-      "files": [
-        "License.rtf",
-        "System.Net.Http.WinHttpHandler.4.0.0-beta-22816.nupkg",
-        "System.Net.Http.WinHttpHandler.4.0.0-beta-22816.nupkg.sha512",
-        "System.Net.Http.WinHttpHandler.nuspec",
-        "lib/aspnetcore50/System.Net.Http.WinHttpHandler.dll",
-        "lib/contract/System.Net.Http.WinHttpHandler.dll",
-        "lib/net45/_._",
-        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Net.Http.WinHttpHandler.dll"
       ]
     },
     "System.Net.NetworkInformation/4.0.10-beta-22816": {

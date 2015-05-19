@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNet.Authentication.MicrosoftAccount;
-using Microsoft.AspNet.Builder;
+﻿using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Diagnostics;
 using Microsoft.AspNet.Diagnostics.Entity;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
+using VotR.Services.Interfaces;
+using VotR.Services.Services;
 
 namespace VotR.Web
 {
@@ -35,16 +36,7 @@ namespace VotR.Web
         {
             // Add Application settings to the services container.
             services.Configure<AppSettings>(Configuration.GetSubKey("AppSettings"));
-
-            // Configure the options for the authentication middleware.
-            // You can add options for Google, Twitter and other middleware as shown below.
-            // For more information see http://go.microsoft.com/fwlink/?LinkID=532715
-
-            services.Configure<MicrosoftAccountAuthenticationOptions>(options =>
-            {
-                options.ClientId = Configuration["Authentication:MicrosoftAccount:ClientId"];
-                options.ClientSecret = Configuration["Authentication:MicrosoftAccount:ClientSecret"];
-            });
+            services.AddScoped<IExternalService, ExternalService>();
 
             // Add MVC services to the services container.
             services.AddMvc();
@@ -84,7 +76,6 @@ namespace VotR.Web
             // app.UseGoogleAuthentication();
             // app.UseMicrosoftAccountAuthentication();
             // app.UseTwitterAuthentication();
-
             // Add MVC to the request pipeline.
             app.UseMvc(routes =>
             {
