@@ -12,7 +12,8 @@
     "System.Xml.ReaderWriter": "4.0.10-beta-22816",
     "System.Xml.XDocument": "4.0.10-beta-22816",
     "System.Net.Http": "4.0.0-beta-22816",
-    "VotR.Shared": "1.0.0-*"
+    "VotR.Shared": "1.0.0-*",
+    "System.ServiceModel": "1.0.0"
 
   },
 
@@ -26,7 +27,8 @@
         "Microsoft.CSharp": "4.0.0-beta-22816",
         "System.Net.Http": "4.0.0-beta-22816",
         "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
-        "Microsoft.Framework.Caching.Memory": "1.0.0-beta4"
+        "Microsoft.Framework.Caching.Memory": "1.0.0-beta4",
+        "System.ServiceModel": "1.0.0"
       }
     }
   }

@@ -6854,6 +6854,30 @@
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Security.SecureString.dll"
       ]
     },
+    "System.ServiceModel/1.0.0": {
+      "serviceable": false,
+      "sha": "d+n9sKnI7sms2Kd6SOtlPutq6NviOFrBDC9ifPimgSKlv5Gc/yrOUbdBIWas/SnDTE5vh8vRKZgUpYRFN52sjg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "NuGet.exe",
+        "System.ServiceModel.1.0.0.nupkg",
+        "System.ServiceModel.1.0.0.nupkg.sha512",
+        "System.ServiceModel.nuspec"
+      ]
+    },
     "System.Text.Encoding/4.0.10-beta-22816": {
       "serviceable": false,
       "sha": "QDKTAvat7aDGMWnVkGm6tJvvmc2zSTa/p8M4/OEBBkZKNx4SGkeGEjFUhl7b6AXZ220m4dACygkiAVoB/LqMHw==",

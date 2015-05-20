@@ -8,7 +8,8 @@
       "System.Xml.ReaderWriter >= 4.0.10-beta-22816",
       "System.Xml.XDocument >= 4.0.10-beta-22816",
       "System.Net.Http >= 4.0.0-beta-22816",
-      "VotR.Shared >= 1.0.0-*"
+      "VotR.Shared >= 1.0.0-*",
+      "System.ServiceModel >= 1.0.0"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": [
@@ -18,7 +19,8 @@
       "Microsoft.CSharp >= 4.0.0-beta-22816",
       "System.Net.Http >= 4.0.0-beta-22816",
       "Microsoft.Framework.ConfigurationModel >= 1.0.0-beta4",
-      "Microsoft.Framework.Caching.Memory >= 1.0.0-beta4"
+      "Microsoft.Framework.Caching.Memory >= 1.0.0-beta4",
+      "System.ServiceModel >= 1.0.0"
     ]
   },
   "libraries": {
@@ -1348,6 +1350,30 @@
         "lib/contract/System.Runtime.InteropServices.dll",
         "lib/net45/System.Runtime.InteropServices.dll",
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Runtime.InteropServices.dll"
+      ]
+    },
+    "System.ServiceModel/1.0.0": {
+      "serviceable": false,
+      "sha": "d+n9sKnI7sms2Kd6SOtlPutq6NviOFrBDC9ifPimgSKlv5Gc/yrOUbdBIWas/SnDTE5vh8vRKZgUpYRFN52sjg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        },
+        "DNXCore,Version=v5.0": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [],
+          "compileAssemblies": []
+        }
+      },
+      "files": [
+        "NuGet.exe",
+        "System.ServiceModel.1.0.0.nupkg",
+        "System.ServiceModel.1.0.0.nupkg.sha512",
+        "System.ServiceModel.nuspec"
       ]
     },
     "System.Text.Encoding/4.0.10-beta-22816": {
