@@ -14,6 +14,8 @@ namespace VotR.Web.Controllers
 
         public IActionResult Index()
         {
+            WcfService1 x = new WcfService1();
+
             return View();
         }
 
