@@ -5,6 +5,7 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
+using VotR.Db.VotRDbContext;
 using VotR.Services.Interfaces;
 using VotR.Services.Services;
 
@@ -36,8 +37,15 @@ namespace VotR.Web
         {
             // Add Application settings to the services container.
             services.Configure<AppSettings>(Configuration.GetSubKey("AppSettings"));
-            services.AddScoped<IExternalService, ExternalService>();
 
+            services.AddEntityFramework().AddSqlServer().AddDbContext<VotRDbContext>();
+
+            services.AddTransient<IExternalService, ExternalService>();
+
+            //TODO: När alla skall bada: Sätt upp SQL och testa serviceses
+            //services.AddTransient<IBeerService, BeerService>();
+
+            //services.AddEntityFramework().AddSqlServer().AddDbContext<VotRDbContext>();
             // Add MVC services to the services container.
             services.AddMvc();
         }

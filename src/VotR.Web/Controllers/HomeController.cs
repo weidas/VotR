@@ -6,15 +6,16 @@ namespace VotR.Web.Controllers
     public class HomeController : Controller
     {
         private readonly IExternalService _externalService;
+        private readonly IBeerService _beerService;
 
-        public HomeController(IExternalService externalService)
+        public HomeController(IExternalService externalService, IBeerService beerService)
         {
             _externalService = externalService;
+            _beerService = beerService;
         }
 
         public IActionResult Index()
         {
-            WcfService1 x = new WcfService1();
 
             return View();
         }
@@ -41,6 +42,13 @@ namespace VotR.Web.Controllers
         public IActionResult SyncSystembolaget()
         {
             var x =_externalService.GetArticlesFromSystemBolaget("http://www.systembolaget.se/api/assortment/products/xml");
+
+            return View("Index");
+        }
+
+        public IActionResult GetBeer()
+        {
+            var b = _beerService.GetAll();
 
             return View("Index");
         }
