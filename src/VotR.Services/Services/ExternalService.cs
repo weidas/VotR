@@ -43,7 +43,7 @@ namespace VotR.Services.Services
 
             articles.AddRange(xmlArticles.Select(a => new SystemBolagetArticle
             {
-                ArtNr = a.Element("Artikelid").CheckIfElementIsNull<string>(),
+                ArticleId = a.Element("Artikelid").CheckIfElementIsNull<string>(),
                 Name = a.Element("Namn").CheckIfElementIsNull<string>(),
                 Name2 = a.Element("Namn2").CheckIfElementIsNull<string>(),
                 PriceWithVat = a.Element("Prisinklmoms").CheckIfElementIsNull<string>(),

@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Diagnostics;
 using Microsoft.AspNet.Diagnostics.Entity;
 using Microsoft.AspNet.Hosting;
+using Microsoft.Framework.Caching.Memory;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
@@ -40,10 +41,12 @@ namespace VotR.Web
 
             services.AddEntityFramework().AddSqlServer().AddDbContext<VotRDbContext>();
 
+            services.AddSingleton<IMemoryCache, MemoryCache>();
+
             services.AddTransient<IExternalService, ExternalService>();
 
             //TODO: När alla skall bada: Sätt upp SQL och testa serviceses
-            //services.AddTransient<IBeerService, BeerService>();
+            services.AddTransient<IBeerService, BeerService>();
 
             //services.AddEntityFramework().AddSqlServer().AddDbContext<VotRDbContext>();
             // Add MVC services to the services container.

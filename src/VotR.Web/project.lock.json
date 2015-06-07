@@ -20,7 +20,9 @@
       "Microsoft.AspNet.StaticFiles >= 1.0.0-beta4",
       "Microsoft.AspNet.Tooling.Razor >= 1.0.0-beta4",
       "Microsoft.AspNet.Mvc >= 6.0.0-beta4",
-      "Microsoft.AspNet.Server.IIS >= 1.0.0-beta4"
+      "Microsoft.AspNet.Server.IIS >= 1.0.0-beta4",
+      "Microsoft.Framework.Caching.Memory >= 1.0.0-beta4",
+      "System.Runtime >= 4.0.20-beta-22816"
     ],
     "DNX,Version=v5.0": [],
     "DNXCore,Version=v5.0": []

@@ -2,7 +2,7 @@
 {
     public class SystemBolagetArticle
     {
-        public string ArtNr { get; set; }
+        public string ArticleId { get; set; }
         public string Name { get; set; }
         public string Name2 { get; set; }
         public string Description { get; set; }
